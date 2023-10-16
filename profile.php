@@ -55,7 +55,7 @@ $color="navbar-dark cyan darken-3";
                     // echo $userUsername;
                     // echo $userUserId;
 
-                    $insertQ="SELECT productName, productId FROM products WHERE userId = '$userUserId' AND userName = '$userUsername' ";
+                    $insertQ="SELECT productName, productId,owner FROM products WHERE userId = '$userUserId' AND userName = '$userUsername' ";
                     $qry_result=mysqli_query($conn, $insertQ) or die(mysqli_error($conn));
                     if (mysqli_num_rows($qry_result) > 0) {
                       echo "<table style='border-collapse: collapse; width: 100%;' >";
@@ -65,11 +65,14 @@ $color="navbar-dark cyan darken-3";
                   
                       // Loop through the result set and print the data in a table row
                       while ($row = mysqli_fetch_assoc($qry_result)) {
+                        if($row['owner']=='yes')
+                        {
                           echo "<tr>";
                           echo "<td>" . $count++ . "</td>";
                           echo "<td>" . $row['productName'] . "</td>";
                           echo "<td>" . $row['productId'] . "</td>";
                           echo "</tr>";
+                        }
                       }
                   
                       echo "</table>";
