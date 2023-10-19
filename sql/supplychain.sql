@@ -12,4 +12,4 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 INSERT INTO `users` (`id`, `email`, `username`, `password`,`product`, `role`,`owner`) VALUES
-(1, 'riteshprajapati', 'Ritesh ', '0cc175b9c0f1b6a831c399e269772661', 0,0,'no');
+(1, 'riteshxxxxx', 'Ritesh ', '0cc175b9c0f1b6a831c399e269772661', 0,0,'no');
