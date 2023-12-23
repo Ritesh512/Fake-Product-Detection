@@ -1,11 +1,13 @@
 ## Project Title - Fake Product Detection Using Blockchain
 ```
 This application has the ability to identify counterfeit products in the market and predict their appearance.
-The product's manufacturer must register the product on the website in order for it to generate a unique QR code that can be used to trace the product all the way through the
-supply chain. Ownership of the product may be transferred by the product owner. Therefore, after transferring ownership, he is unable to offer the same goods to another client.
- Additionally, if the QR code is scanned later, the new address of the recipient of the ownership transfer will be displayed. In this way, the supply chain is likewise unaffected
+The product's manufacturer must register the product on the website in order for it to generate a unique QR
+code that can be used to trace the product all the way through the supply chain.
+Ownership of the product may be transferred by the product owner.
+Therefore, after transferring ownership, he is unable to offer the same goods to another client.
+Additionally, if the QR code is scanned later, the new address of the recipient of the ownership transfer will be displayed. In this way, the supply chain is likewise unaffected
 by the duplicate QR code.
-The application is build using HTML, CSS, JavaScript, PHP, Solidity, MetaMask, Ganache.
+The application is build using HTML, CSS, JavaScript, PHP, MYSQL, Web3.js, Solidity, MetaMask, Ganache.
 ```
 ## Features
 ```
@@ -23,6 +25,7 @@ The application is build using HTML, CSS, JavaScript, PHP, Solidity, MetaMask, G
 
 5. **QR Code Authentication:**
    - QR code scanning verifies the authenticity of the product and provides information about the current owner.
+
 6. **Registration/Login Types**
    - Manufacturer, Distributor, Retailer and Customer 
 ```
